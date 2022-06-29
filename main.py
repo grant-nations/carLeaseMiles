@@ -3,7 +3,7 @@ from colorama import Fore
 
 if __name__ == '__main__':
     MILES_ALLOWED_PER_YEAR = 12000
-    MILES_ALLOWED_PER_DAY = 32.87
+    MILES_ALLOWED_PER_DAY = MILES_ALLOWED_PER_YEAR/365
 
     days_since_lease_start = date.today() - date(2022, 3, 14)
     current_max_mileage = days_since_lease_start.days * MILES_ALLOWED_PER_DAY
